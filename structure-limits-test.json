@@ -1,0 +1,26 @@
+{
+  "_notes": [
+    "TEST DRAFT for Structure Controller, CurseForge mod 1470304. This is not an SR's Structure Limits plugin configuration.",
+    "The intended item-specific limit is one Seed Farm Ultimate Tek Plot per tribe per map.",
+    "MaxStructuresPerTribe=2000000000 is a finite high-cap workaround for a zero-limit bug found by static inspection of mod file 7842511. It is not literal unlimited, and it has not been tested in-game.",
+    "Other custom structure settings are empty; the connected-structure cap and optional limit UI/command are disabled.",
+    "The inspected mod contacts an external verification service before applying settings. Whether a creator-issued license is required remains unconfirmed. No credentials are included.",
+    "Host this file at a public raw HTTPS URL. In GameUserSettings.ini use [StructureController] JsonSource= followed by that URL without the https:// prefix.",
+    "Test ordinary building, the first and second Ultimate Tek Plot in the same tribe, a first plot in another tribe, and restart persistence before using on a live map. Existing excess plots are not automatically removed by the inspected placement check.",
+    "Sources: https://www.ark-server-api.com/resources/structure-controller.390/ ; https://www.curseforge.com/ark-survival-ascended/mods/structure-controller/files/7842511"
+  ],
+  "GlobalConfig": {
+    "MaxStructuresPerTribe": 2000000000,
+    "MaxLinkedStructures": 0,
+    "ShowLimitsInRadialMenu": false,
+    "ShowLimitsCommand": "",
+    "StructuresExcludedFromTribeLimit": ""
+  },
+  "StructureLimits": [
+    {
+      "StructureBlueprint": "/SeedFarmASA/Structures/CropPlots/UltimateTekPlot/PrimalItemStructure_BP_SF_UltimateTekPlot.PrimalItemStructure_BP_SF_UltimateTekPlot_C",
+      "MaxAllowedPerTribe": 1
+    }
+  ],
+  "StructureSettings": []
+}
