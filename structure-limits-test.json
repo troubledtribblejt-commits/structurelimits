@@ -19,7 +19,7 @@
   "StructureLimits": [
     {
       "StructureBlueprint": "/SeedFarmASA/Structures/CropPlots/UltimateTekPlot/PrimalItemStructure_BP_SF_UltimateTekPlot.PrimalItemStructure_BP_SF_UltimateTekPlot_C",
-      "MaxAllowedPerTribe": 1
+      "MaxAllowedPerTribe": 2
     },
     {
       "StructureBlueprint": "/SeedFarmASA/Structures/CropPlots/TekCrop/PrimalItemStructure_BP_SF_TekCrop.PrimalItemStructure_BP_SF_TekCrop_C",
