@@ -1,0 +1,36 @@
+{
+  "_notes": [
+    "Main-server configuration for Structure Controller, CurseForge mod 1470304.",
+    "The intended item-specific limits are two Seed Farm Ultimate Tek Plots, 50 Seed Farm Tek Crop Plots, and one Cyber Structures Tek Forcefield per tribe per map.",
+    "The server owner reports that the configuration works on the test server. This file preserves the current test configuration's effective settings, including the owner's Ultimate Tek Plot limit of 2.",
+    "MaxStructuresPerTribe=2000000000 is a finite high-cap workaround for a zero-limit bug found by static inspection of mod file 7842511. It is not literal unlimited.",
+    "Other custom structure settings are empty; the connected-structure cap and optional limit UI/command are disabled.",
+    "The inspected mod contacts an external verification service before applying settings. No credentials are included.",
+    "In GameUserSettings.ini use [StructureController] JsonSource=raw.githubusercontent.com/troubledtribblejt-commits/structurelimits/main/structure-limits.json without the https:// prefix.",
+    "Existing excess structures are not automatically removed by the inspected placement check. The inspected mod has no admin exemption for per-item limits.",
+    "structure-limits-test.json remains a separate file for testing. Changes to that file do not alter this file's settings.",
+    "Sources: https://www.ark-server-api.com/resources/structure-controller.390/ ; https://www.curseforge.com/ark-survival-ascended/mods/structure-controller/files/7842511"
+  ],
+  "GlobalConfig": {
+    "MaxStructuresPerTribe": 2000000000,
+    "MaxLinkedStructures": 0,
+    "ShowLimitsInRadialMenu": false,
+    "ShowLimitsCommand": "",
+    "StructuresExcludedFromTribeLimit": ""
+  },
+  "StructureLimits": [
+    {
+      "StructureBlueprint": "/SeedFarmASA/Structures/CropPlots/UltimateTekPlot/PrimalItemStructure_BP_SF_UltimateTekPlot.PrimalItemStructure_BP_SF_UltimateTekPlot_C",
+      "MaxAllowedPerTribe": 2
+    },
+    {
+      "StructureBlueprint": "/SeedFarmASA/Structures/CropPlots/TekCrop/PrimalItemStructure_BP_SF_TekCrop.PrimalItemStructure_BP_SF_TekCrop_C",
+      "MaxAllowedPerTribe": 50
+    },
+    {
+      "StructureBlueprint": "/CybersStructures/Misc/TekShield/PrimalItemStructure_TekForceField_CS.PrimalItemStructure_TekForceField_CS_C",
+      "MaxAllowedPerTribe": 1
+    }
+  ],
+  "StructureSettings": []
+}
